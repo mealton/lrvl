@@ -218,7 +218,7 @@ SELECT `name`, COUNT(*) as `count`
 FROM `hashtags`
 GROUP BY `name`
 ORDER BY `count` DESC
-LIMIT 8
+LIMIT 30
 SQL;
         return DB::select($sql);
     }

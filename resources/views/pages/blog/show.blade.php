@@ -25,9 +25,6 @@
                 </div>
             </div>
 
-            <hr class="g-brd-gray-light-v4">
-
-            <hr class="g-brd-gray-light-v4 g-mb-25">
             <!-- Related Articles -->
             <div class="g-mb-0">
                 <div class="u-heading-v3-1 g-mb-30">
@@ -43,6 +40,7 @@
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-0">
                                         <img class="img-fluid w-100 h-100"
                                              style="object-fit: cover; object-position: center"
+                                             title="{{$item->title}}"
                                              src="{{ $item->image  }}" alt="{{$item->title}}">
                                         <figcaption class="g-pos-abs g-top-10 g-left-10">
                                         <span class="btn btn-xs u-btn-blue text-uppercase rounded-0">
