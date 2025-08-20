@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*========================================================
+  Theme Name: Gravity
+  Description: Gravity - Multi-Purpose HTML Template
+  Author: G-Projects
+  Author URI: https://www.templatemonster.com/authors/gworld
+  Style: Plugins CSS
+  Version: 2.5
+========================================================*/
+
+/* Bootstrap CSS
+------------------------------------------------------- */
+@import "/vendors/bootstrap/bootstrap.min.css";
+
+/* Plugins CSS
+------------------------------------------------------- */
+@import "/vendors/icon-awesome/css/font-awesome.min.css";
+@import "/vendors/icon-line/css/simple-line-icons.css";
+@import "/vendors/icon-etlinefont/style.css";
+@import "/vendors/icon-line-pro/style.css";
+@import "/vendors/chosen/chosen.css";
+@import "/vendors/icon-hs/style.css";
+@import "/vendors/themify-icons/themify-icons.css";
+@import "/vendors/dzsparallaxer/dzsparallaxer.css";
+@import "/vendors/dzsparallaxer/dzsscroller/scroller.css";
+@import "/vendors/dzsparallaxer/advancedscroller/plugin.css";
+@import "/vendors/animate.css";
+@import "/vendors/jquery-ui/themes/base/jquery-ui.min.css";
+@import "/vendors/wait-animate.min.css";
+@import "/vendors/gs-megamenu/src/gs.megamenu.css";
+@import "/vendors/hamburgers/hamburgers.min.css";
+@import "/vendors/fancybox/jquery.fancybox.min.css";
+@import "/vendors/slick-carousel/slick/slick.css";
+@import "/vendors/typedjs/typed.css";
+@import "/vendors/gs-bg-video/gs-bg-video.css";
+@import "/vendors/malihu-scrollbar/jquery.mCustomScrollbar.min.css";
+@import "/vendors/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css";
+
+/* Revolution Slider CSS
+------------------------------------------------------- */
+@import "/vendors/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css";
+@import "/vendors/revolution-slider/revolution/css/settings.css";
+@import "/vendors/revolution-slider/revolution/css/layers.css";
+@import "/vendors/revolution-slider/revolution/css/navigation.css";
+@import "/vendors/revolution-slider/revolution-addons/particles/css/revolution.addon.particles.css";

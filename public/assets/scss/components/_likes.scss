@@ -1,0 +1,39 @@
+.likes-chars {
+  overflow: hidden;
+  display: inline-block;
+
+  .likes-char-item {
+    &.movable {
+      display: inline-block;
+      min-width: 10px;
+      text-align: right;
+
+      transition: all .3s ease-in-out;
+
+      &.to-decrement {
+        transform: translateY(20px);
+      }
+
+      &.to-increment {
+        transform: translateY(-20px);
+      }
+
+      & > span:not(.current-like-char) {
+        position: absolute;
+        left: 0;
+        min-width: 10px;
+        text-align: right;
+
+        &.likes-decrement {
+          bottom: 100%;
+        }
+
+        &.likes-increment {
+          top: 100%;
+        }
+      }
+
+
+    }
+  }
+}

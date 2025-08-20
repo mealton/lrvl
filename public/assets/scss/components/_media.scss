@@ -1,0 +1,111 @@
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1199px) {
+  .pagination-container {
+    padding: 30px 0 !important;
+  }
+
+}
+
+@media screen and (max-width: 999px) {
+  #main-content > .container {
+    padding-top: 30px !important;
+  }
+
+  .album-images-container {
+    padding: 0 !important;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+  h1 {
+    font-size: 30px !important;
+  }
+
+  .image-next, .image-prev {
+    width: 25px !important;
+    height: 25px;
+  }
+
+  .grid-group {
+    padding: 20px 20px 10px !important;
+  }
+}
+
+@media screen and (max-width: 599px) {
+
+  .album-item {
+    .h5 {
+      font-size: 16px !important;
+      @media screen and (max-width: 399px) {
+        font-size: 14px !important;
+      }
+
+      .img-counter {
+        font-size: 14px;
+        @media screen and (max-width: 399px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .similar-album-caption {
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .tag-link-item {
+    padding: 5px !important;
+  }
+
+  h1 {
+    font-size: 24px !important;
+  }
+
+  .image-header-info {
+    display: flex;
+    justify-content: initial;
+    flex-wrap: wrap;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  #image-modal {
+    .top-header-info {
+      padding-top: 40px;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li {
+          margin-bottom: 10px;
+
+          &:last-child {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .description {
+      font-size: 14px;
+    }
+  }
+
+
+  .grid-group {
+    padding: 10px 10px 5px !important;
+  }
+}

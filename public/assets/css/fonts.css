@@ -1,0 +1,1711 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "media";
+  src:url("../vendor/icon-line-pro/media/webfont/fonts/media.eot");
+  src:url("../vendor/icon-line-pro/media/webfont/fonts/media.eot?#iefix") format("embedded-opentype"),
+  url("../vendor/icon-line-pro/media/webfont/fonts/media.woff") format("woff"),
+  url("../vendor/icon-line-pro/media/webfont/fonts/media.ttf") format("truetype"),
+  url("../vendor/icon-line-pro/media/webfont/fonts/media.svg#media") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon-media]:before {
+  font-family: "media" !important;
+  content: attr(data-icon-media);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-media"]:before,
+[class*=" icon-media"]:before {
+  font-family: "media" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-media-001:before {
+  content: "a";
+}
+.icon-media-014:before {
+  content: "b";
+}
+.icon-media-027:before {
+  content: "c";
+}
+.icon-media-040:before {
+  content: "d";
+}
+.icon-media-041:before {
+  content: "e";
+}
+.icon-media-028:before {
+  content: "f";
+}
+.icon-media-015:before {
+  content: "g";
+}
+.icon-media-002:before {
+  content: "h";
+}
+.icon-media-003:before {
+  content: "i";
+}
+.icon-media-016:before {
+  content: "j";
+}
+.icon-media-029:before {
+  content: "k";
+}
+.icon-media-042:before {
+  content: "l";
+}
+.icon-media-043:before {
+  content: "m";
+}
+.icon-media-030:before {
+  content: "n";
+}
+.icon-media-017:before {
+  content: "o";
+}
+.icon-media-004:before {
+  content: "p";
+}
+.icon-media-005:before {
+  content: "q";
+}
+.icon-media-018:before {
+  content: "r";
+}
+.icon-media-031:before {
+  content: "s";
+}
+.icon-media-044:before {
+  content: "t";
+}
+.icon-media-045:before {
+  content: "u";
+}
+.icon-media-032:before {
+  content: "v";
+}
+.icon-media-019:before {
+  content: "w";
+}
+.icon-media-006:before {
+  content: "x";
+}
+.icon-media-007:before {
+  content: "y";
+}
+.icon-media-020:before {
+  content: "z";
+}
+.icon-media-033:before {
+  content: "A";
+}
+.icon-media-046:before {
+  content: "B";
+}
+.icon-media-047:before {
+  content: "C";
+}
+.icon-media-034:before {
+  content: "D";
+}
+.icon-media-021:before {
+  content: "E";
+}
+.icon-media-008:before {
+  content: "F";
+}
+.icon-media-009:before {
+  content: "G";
+}
+.icon-media-022:before {
+  content: "H";
+}
+.icon-media-035:before {
+  content: "I";
+}
+.icon-media-048:before {
+  content: "J";
+}
+.icon-media-049:before {
+  content: "K";
+}
+.icon-media-036:before {
+  content: "L";
+}
+.icon-media-023:before {
+  content: "M";
+}
+.icon-media-010:before {
+  content: "N";
+}
+.icon-media-011:before {
+  content: "O";
+}
+.icon-media-024:before {
+  content: "P";
+}
+.icon-media-037:before {
+  content: "Q";
+}
+.icon-media-050:before {
+  content: "R";
+}
+.icon-media-063:before {
+  content: "S";
+}
+.icon-media-064:before {
+  content: "T";
+}
+.icon-media-051:before {
+  content: "U";
+}
+.icon-media-038:before {
+  content: "V";
+}
+.icon-media-025:before {
+  content: "W";
+}
+.icon-media-012:before {
+  content: "X";
+}
+.icon-media-013:before {
+  content: "Y";
+}
+.icon-media-026:before {
+  content: "Z";
+}
+.icon-media-039:before {
+  content: "0";
+}
+.icon-media-052:before {
+  content: "1";
+}
+.icon-media-065:before {
+  content: "2";
+}
+.icon-media-062:before {
+  content: "3";
+}
+.icon-media-061:before {
+  content: "4";
+}
+.icon-media-060:before {
+  content: "5";
+}
+.icon-media-059:before {
+  content: "6";
+}
+.icon-media-058:before {
+  content: "7";
+}
+.icon-media-057:before {
+  content: "8";
+}
+.icon-media-056:before {
+  content: "9";
+}
+.icon-media-055:before {
+  content: "!";
+}
+.icon-media-054:before {
+  content: "\"";
+}
+.icon-media-053:before {
+  content: "#";
+}
+.icon-media-066:before {
+  content: "$";
+}
+.icon-media-079:before {
+  content: "%";
+}
+.icon-media-092:before {
+  content: "&";
+}
+.icon-media-105:before {
+  content: "'";
+}
+.icon-media-118:before {
+  content: "(";
+}
+.icon-media-119:before {
+  content: ")";
+}
+.icon-media-106:before {
+  content: "*";
+}
+.icon-media-093:before {
+  content: "+";
+}
+.icon-media-080:before {
+  content: ",";
+}
+.icon-media-067:before {
+  content: "-";
+}
+.icon-media-068:before {
+  content: ".";
+}
+.icon-media-081:before {
+  content: "/";
+}
+.icon-media-094:before {
+  content: ":";
+}
+.icon-media-107:before {
+  content: ";";
+}
+.icon-media-120:before {
+  content: "<";
+}
+.icon-media-121:before {
+  content: "=";
+}
+.icon-media-108:before {
+  content: ">";
+}
+.icon-media-095:before {
+  content: "?";
+}
+.icon-media-082:before {
+  content: "@";
+}
+.icon-media-069:before {
+  content: "[";
+}
+.icon-media-070:before {
+  content: "]";
+}
+.icon-media-083:before {
+  content: "^";
+}
+.icon-media-096:before {
+  content: "_";
+}
+.icon-media-109:before {
+  content: "`";
+}
+.icon-media-122:before {
+  content: "{";
+}
+.icon-media-123:before {
+  content: "|";
+}
+.icon-media-110:before {
+  content: "}";
+}
+.icon-media-097:before {
+  content: "~";
+}
+.icon-media-084:before {
+  content: "\\";
+}
+.icon-media-071:before {
+  content: "\e000";
+}
+.icon-media-072:before {
+  content: "\e001";
+}
+.icon-media-085:before {
+  content: "\e002";
+}
+.icon-media-098:before {
+  content: "\e003";
+}
+.icon-media-111:before {
+  content: "\e004";
+}
+.icon-media-124:before {
+  content: "\e005";
+}
+.icon-media-125:before {
+  content: "\e006";
+}
+.icon-media-112:before {
+  content: "\e007";
+}
+.icon-media-099:before {
+  content: "\e008";
+}
+.icon-media-086:before {
+  content: "\e009";
+}
+.icon-media-073:before {
+  content: "\e00a";
+}
+.icon-media-074:before {
+  content: "\e00b";
+}
+.icon-media-087:before {
+  content: "\e00c";
+}
+.icon-media-100:before {
+  content: "\e00d";
+}
+.icon-media-113:before {
+  content: "\e00e";
+}
+.icon-media-126:before {
+  content: "\e00f";
+}
+.icon-media-127:before {
+  content: "\e010";
+}
+.icon-media-114:before {
+  content: "\e011";
+}
+.icon-media-101:before {
+  content: "\e012";
+}
+.icon-media-088:before {
+  content: "\e013";
+}
+.icon-media-075:before {
+  content: "\e014";
+}
+.icon-media-076:before {
+  content: "\e015";
+}
+.icon-media-089:before {
+  content: "\e016";
+}
+.icon-media-090:before {
+  content: "\e017";
+}
+.icon-media-077:before {
+  content: "\e018";
+}
+.icon-media-078:before {
+  content: "\e019";
+}
+.icon-media-091:before {
+  content: "\e01a";
+}
+.icon-media-104:before {
+  content: "\e01b";
+}
+.icon-media-103:before {
+  content: "\e01c";
+}
+.icon-media-102:before {
+  content: "\e01d";
+}
+.icon-media-115:before {
+  content: "\e01e";
+}
+.icon-media-116:before {
+  content: "\e01f";
+}
+.icon-media-117:before {
+  content: "\e020";
+}
+.icon-media-130:before {
+  content: "\e021";
+}
+.icon-media-129:before {
+  content: "\e022";
+}
+.icon-media-128:before {
+  content: "\e023";
+}
+
+
+
+
+
+/* Finance */
+@font-face {
+  font-family: "finance";
+  src:url("../vendor/icon-line-pro/finance/webfont/fonts/finance.eot");
+  src:url("../vendor/icon-line-pro/finance/webfont/fonts/finance.eot?#iefix") format("embedded-opentype"),
+  url("../vendor/icon-line-pro/finance/webfont/fonts/finance.woff") format("woff"),
+  url("../vendor/icon-line-pro/finance/webfont/fonts/finance.ttf") format("truetype"),
+  url("../vendor/icon-line-pro/finance/webfont/fonts/finance.svg#finance") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon-finance]:before {
+  font-family: "finance" !important;
+  content: attr(data-icon-finance);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-finance"]:before,
+[class*=" icon-finance"]:before {
+  font-family: "finance" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-finance-260:before {
+  content: "a";
+}
+.icon-finance-259:before {
+  content: "b";
+}
+.icon-finance-246:before {
+  content: "c";
+}
+.icon-finance-247:before {
+  content: "d";
+}
+.icon-finance-234:before {
+  content: "e";
+}
+.icon-finance-233:before {
+  content: "f";
+}
+.icon-finance-232:before {
+  content: "g";
+}
+.icon-finance-245:before {
+  content: "h";
+}
+.icon-finance-258:before {
+  content: "i";
+}
+.icon-finance-257:before {
+  content: "j";
+}
+.icon-finance-256:before {
+  content: "k";
+}
+.icon-finance-243:before {
+  content: "l";
+}
+.icon-finance-244:before {
+  content: "m";
+}
+.icon-finance-231:before {
+  content: "n";
+}
+.icon-finance-230:before {
+  content: "o";
+}
+.icon-finance-229:before {
+  content: "p";
+}
+.icon-finance-242:before {
+  content: "q";
+}
+.icon-finance-255:before {
+  content: "r";
+}
+.icon-finance-254:before {
+  content: "s";
+}
+.icon-finance-241:before {
+  content: "t";
+}
+.icon-finance-228:before {
+  content: "u";
+}
+.icon-finance-227:before {
+  content: "v";
+}
+.icon-finance-240:before {
+  content: "w";
+}
+.icon-finance-253:before {
+  content: "x";
+}
+.icon-finance-252:before {
+  content: "y";
+}
+.icon-finance-239:before {
+  content: "z";
+}
+.icon-finance-226:before {
+  content: "A";
+}
+.icon-finance-225:before {
+  content: "B";
+}
+.icon-finance-238:before {
+  content: "C";
+}
+.icon-finance-251:before {
+  content: "D";
+}
+.icon-finance-250:before {
+  content: "E";
+}
+.icon-finance-237:before {
+  content: "F";
+}
+.icon-finance-224:before {
+  content: "G";
+}
+.icon-finance-223:before {
+  content: "H";
+}
+.icon-finance-236:before {
+  content: "I";
+}
+.icon-finance-249:before {
+  content: "J";
+}
+.icon-finance-235:before {
+  content: "K";
+}
+.icon-finance-222:before {
+  content: "L";
+}
+.icon-finance-248:before {
+  content: "M";
+}
+.icon-finance-209:before {
+  content: "N";
+}
+.icon-finance-196:before {
+  content: "O";
+}
+.icon-finance-183:before {
+  content: "P";
+}
+.icon-finance-184:before {
+  content: "Q";
+}
+.icon-finance-197:before {
+  content: "R";
+}
+.icon-finance-210:before {
+  content: "S";
+}
+.icon-finance-211:before {
+  content: "T";
+}
+.icon-finance-198:before {
+  content: "U";
+}
+.icon-finance-185:before {
+  content: "V";
+}
+.icon-finance-186:before {
+  content: "W";
+}
+.icon-finance-199:before {
+  content: "X";
+}
+.icon-finance-212:before {
+  content: "Y";
+}
+.icon-finance-213:before {
+  content: "Z";
+}
+.icon-finance-200:before {
+  content: "0";
+}
+.icon-finance-187:before {
+  content: "1";
+}
+.icon-finance-188:before {
+  content: "2";
+}
+.icon-finance-189:before {
+  content: "3";
+}
+.icon-finance-201:before {
+  content: "4";
+}
+.icon-finance-214:before {
+  content: "5";
+}
+.icon-finance-215:before {
+  content: "6";
+}
+.icon-finance-202:before {
+  content: "7";
+}
+.icon-finance-216:before {
+  content: "8";
+}
+.icon-finance-203:before {
+  content: "9";
+}
+.icon-finance-204:before {
+  content: "!";
+}
+.icon-finance-217:before {
+  content: "\"";
+}
+.icon-finance-191:before {
+  content: "#";
+}
+.icon-finance-190:before {
+  content: "$";
+}
+.icon-finance-192:before {
+  content: "%";
+}
+.icon-finance-205:before {
+  content: "&";
+}
+.icon-finance-218:before {
+  content: "'";
+}
+.icon-finance-219:before {
+  content: "(";
+}
+.icon-finance-206:before {
+  content: ")";
+}
+.icon-finance-193:before {
+  content: "*";
+}
+.icon-finance-194:before {
+  content: "+";
+}
+.icon-finance-207:before {
+  content: ",";
+}
+.icon-finance-220:before {
+  content: "-";
+}
+.icon-finance-221:before {
+  content: ".";
+}
+.icon-finance-208:before {
+  content: "/";
+}
+.icon-finance-195:before {
+  content: ":";
+}
+.icon-finance-182:before {
+  content: ";";
+}
+.icon-finance-181:before {
+  content: "<";
+}
+.icon-finance-180:before {
+  content: "=";
+}
+.icon-finance-167:before {
+  content: ">";
+}
+.icon-finance-168:before {
+  content: "?";
+}
+.icon-finance-169:before {
+  content: "@";
+}
+.icon-finance-156:before {
+  content: "[";
+}
+.icon-finance-155:before {
+  content: "]";
+}
+.icon-finance-154:before {
+  content: "^";
+}
+.icon-finance-141:before {
+  content: "_";
+}
+.icon-finance-142:before {
+  content: "`";
+}
+.icon-finance-143:before {
+  content: "{";
+}
+.icon-finance-130:before {
+  content: "|";
+}
+.icon-finance-129:before {
+  content: "}";
+}
+.icon-finance-128:before {
+  content: "~";
+}
+.icon-finance-127:before {
+  content: "\\";
+}
+.icon-finance-140:before {
+  content: "\e000";
+}
+.icon-finance-139:before {
+  content: "\e001";
+}
+.icon-finance-126:before {
+  content: "\e002";
+}
+.icon-finance-125:before {
+  content: "\e003";
+}
+.icon-finance-138:before {
+  content: "\e004";
+}
+.icon-finance-151:before {
+  content: "\e005";
+}
+.icon-finance-152:before {
+  content: "\e006";
+}
+.icon-finance-153:before {
+  content: "\e007";
+}
+.icon-finance-166:before {
+  content: "\e008";
+}
+.icon-finance-179:before {
+  content: "\e009";
+}
+.icon-finance-178:before {
+  content: "\e00a";
+}
+.icon-finance-165:before {
+  content: "\e00b";
+}
+.icon-finance-164:before {
+  content: "\e00c";
+}
+.icon-finance-177:before {
+  content: "\e00d";
+}
+.icon-finance-176:before {
+  content: "\e00e";
+}
+.icon-finance-163:before {
+  content: "\e00f";
+}
+.icon-finance-150:before {
+  content: "\e010";
+}
+.icon-finance-137:before {
+  content: "\e011";
+}
+.icon-finance-124:before {
+  content: "\e012";
+}
+.icon-finance-123:before {
+  content: "\e013";
+}
+.icon-finance-136:before {
+  content: "\e014";
+}
+.icon-finance-149:before {
+  content: "\e015";
+}
+.icon-finance-162:before {
+  content: "\e016";
+}
+.icon-finance-175:before {
+  content: "\e017";
+}
+.icon-finance-174:before {
+  content: "\e018";
+}
+.icon-finance-161:before {
+  content: "\e019";
+}
+.icon-finance-148:before {
+  content: "\e01a";
+}
+.icon-finance-135:before {
+  content: "\e01b";
+}
+.icon-finance-122:before {
+  content: "\e01c";
+}
+.icon-finance-121:before {
+  content: "\e01d";
+}
+.icon-finance-134:before {
+  content: "\e01e";
+}
+.icon-finance-147:before {
+  content: "\e01f";
+}
+.icon-finance-160:before {
+  content: "\e020";
+}
+.icon-finance-173:before {
+  content: "\e021";
+}
+.icon-finance-172:before {
+  content: "\e022";
+}
+.icon-finance-146:before {
+  content: "\e023";
+}
+.icon-finance-133:before {
+  content: "\e024";
+}
+.icon-finance-120:before {
+  content: "\e025";
+}
+.icon-finance-159:before {
+  content: "\e026";
+}
+.icon-finance-158:before {
+  content: "\e027";
+}
+.icon-finance-171:before {
+  content: "\e028";
+}
+.icon-finance-170:before {
+  content: "\e029";
+}
+.icon-finance-157:before {
+  content: "\e02a";
+}
+.icon-finance-144:before {
+  content: "\e02b";
+}
+.icon-finance-145:before {
+  content: "\e02c";
+}
+.icon-finance-132:before {
+  content: "\e02d";
+}
+.icon-finance-131:before {
+  content: "\e02e";
+}
+.icon-finance-118:before {
+  content: "\e02f";
+}
+.icon-finance-119:before {
+  content: "\e030";
+}
+.icon-finance-106:before {
+  content: "\e031";
+}
+.icon-finance-105:before {
+  content: "\e032";
+}
+.icon-finance-092:before {
+  content: "\e033";
+}
+.icon-finance-093:before {
+  content: "\e034";
+}
+.icon-finance-107:before {
+  content: "\e035";
+}
+.icon-finance-094:before {
+  content: "\e036";
+}
+.icon-finance-095:before {
+  content: "\e037";
+}
+.icon-finance-108:before {
+  content: "\e038";
+}
+.icon-finance-109:before {
+  content: "\e039";
+}
+.icon-finance-096:before {
+  content: "\e03a";
+}
+.icon-finance-097:before {
+  content: "\e03b";
+}
+.icon-finance-110:before {
+  content: "\e03c";
+}
+.icon-finance-111:before {
+  content: "\e03d";
+}
+.icon-finance-098:before {
+  content: "\e03e";
+}
+.icon-finance-099:before {
+  content: "\e03f";
+}
+.icon-finance-112:before {
+  content: "\e040";
+}
+.icon-finance-113:before {
+  content: "\e041";
+}
+.icon-finance-100:before {
+  content: "\e042";
+}
+.icon-finance-101:before {
+  content: "\e043";
+}
+.icon-finance-114:before {
+  content: "\e044";
+}
+.icon-finance-115:before {
+  content: "\e045";
+}
+.icon-finance-102:before {
+  content: "\e046";
+}
+.icon-finance-116:before {
+  content: "\e048";
+}
+.icon-finance-117:before {
+  content: "\e049";
+}
+.icon-finance-104:before {
+  content: "\e047";
+}
+.icon-finance-103:before {
+  content: "\e04a";
+}
+.icon-finance-014:before {
+  content: "\e04b";
+}
+.icon-finance-027:before {
+  content: "\e04c";
+}
+.icon-finance-040:before {
+  content: "\e04d";
+}
+.icon-finance-053:before {
+  content: "\e04e";
+}
+.icon-finance-066:before {
+  content: "\e04f";
+}
+.icon-finance-079:before {
+  content: "\e050";
+}
+.icon-finance-080:before {
+  content: "\e051";
+}
+.icon-finance-067:before {
+  content: "\e052";
+}
+.icon-finance-068:before {
+  content: "\e053";
+}
+.icon-finance-081:before {
+  content: "\e054";
+}
+.icon-finance-070:before {
+  content: "\e055";
+}
+.icon-finance-083:before {
+  content: "\e056";
+}
+.icon-finance-082:before {
+  content: "\e057";
+}
+.icon-finance-069:before {
+  content: "\e058";
+}
+.icon-finance-071:before {
+  content: "\e059";
+}
+.icon-finance-084:before {
+  content: "\e05a";
+}
+.icon-finance-085:before {
+  content: "\e05b";
+}
+.icon-finance-072:before {
+  content: "\e05c";
+}
+.icon-finance-073:before {
+  content: "\e05d";
+}
+.icon-finance-086:before {
+  content: "\e05e";
+}
+.icon-finance-087:before {
+  content: "\e05f";
+}
+.icon-finance-074:before {
+  content: "\e060";
+}
+.icon-finance-075:before {
+  content: "\e061";
+}
+.icon-finance-088:before {
+  content: "\e062";
+}
+.icon-finance-089:before {
+  content: "\e063";
+}
+.icon-finance-076:before {
+  content: "\e064";
+}
+.icon-finance-077:before {
+  content: "\e065";
+}
+.icon-finance-090:before {
+  content: "\e066";
+}
+.icon-finance-091:before {
+  content: "\e067";
+}
+.icon-finance-078:before {
+  content: "\e068";
+}
+.icon-finance-065:before {
+  content: "\e069";
+}
+.icon-finance-052:before {
+  content: "\e06a";
+}
+.icon-finance-039:before {
+  content: "\e06b";
+}
+.icon-finance-026:before {
+  content: "\e06c";
+}
+.icon-finance-025:before {
+  content: "\e06d";
+}
+.icon-finance-038:before {
+  content: "\e06e";
+}
+.icon-finance-051:before {
+  content: "\e06f";
+}
+.icon-finance-064:before {
+  content: "\e070";
+}
+.icon-finance-063:before {
+  content: "\e071";
+}
+.icon-finance-050:before {
+  content: "\e072";
+}
+.icon-finance-037:before {
+  content: "\e073";
+}
+.icon-finance-024:before {
+  content: "\e074";
+}
+.icon-finance-023:before {
+  content: "\e075";
+}
+.icon-finance-036:before {
+  content: "\e076";
+}
+.icon-finance-049:before {
+  content: "\e077";
+}
+.icon-finance-062:before {
+  content: "\e078";
+}
+.icon-finance-061:before {
+  content: "\e079";
+}
+.icon-finance-048:before {
+  content: "\e07a";
+}
+.icon-finance-035:before {
+  content: "\e07b";
+}
+.icon-finance-022:before {
+  content: "\e07c";
+}
+.icon-finance-021:before {
+  content: "\e07d";
+}
+.icon-finance-034:before {
+  content: "\e07e";
+}
+.icon-finance-047:before {
+  content: "\e07f";
+}
+.icon-finance-060:before {
+  content: "\e080";
+}
+.icon-finance-059:before {
+  content: "\e081";
+}
+.icon-finance-046:before {
+  content: "\e082";
+}
+.icon-finance-033:before {
+  content: "\e083";
+}
+.icon-finance-020:before {
+  content: "\e084";
+}
+.icon-finance-019:before {
+  content: "\e085";
+}
+.icon-finance-032:before {
+  content: "\e086";
+}
+.icon-finance-045:before {
+  content: "\e087";
+}
+.icon-finance-058:before {
+  content: "\e088";
+}
+.icon-finance-057:before {
+  content: "\e089";
+}
+.icon-finance-044:before {
+  content: "\e08a";
+}
+.icon-finance-031:before {
+  content: "\e08b";
+}
+.icon-finance-018:before {
+  content: "\e08c";
+}
+.icon-finance-017:before {
+  content: "\e08d";
+}
+.icon-finance-030:before {
+  content: "\e08e";
+}
+.icon-finance-043:before {
+  content: "\e08f";
+}
+.icon-finance-056:before {
+  content: "\e090";
+}
+.icon-finance-055:before {
+  content: "\e091";
+}
+.icon-finance-042:before {
+  content: "\e092";
+}
+.icon-finance-029:before {
+  content: "\e093";
+}
+.icon-finance-016:before {
+  content: "\e094";
+}
+.icon-finance-015:before {
+  content: "\e095";
+}
+.icon-finance-028:before {
+  content: "\e096";
+}
+.icon-finance-041:before {
+  content: "\e097";
+}
+.icon-finance-054:before {
+  content: "\e098";
+}
+.icon-finance-001:before {
+  content: "\e099";
+}
+.icon-finance-002:before {
+  content: "\e09a";
+}
+.icon-finance-003:before {
+  content: "\e09b";
+}
+.icon-finance-004:before {
+  content: "\e09c";
+}
+.icon-finance-005:before {
+  content: "\e09d";
+}
+.icon-finance-006:before {
+  content: "\e09e";
+}
+.icon-finance-007:before {
+  content: "\e09f";
+}
+.icon-finance-008:before {
+  content: "\e0a0";
+}
+.icon-finance-009:before {
+  content: "\e0a1";
+}
+.icon-finance-010:before {
+  content: "\e0a2";
+}
+.icon-finance-011:before {
+  content: "\e0a3";
+}
+.icon-finance-012:before {
+  content: "\e0a4";
+}
+.icon-finance-013:before {
+  content: "\e0a5";
+}
+
+
+
+
+
+
+
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4taVIGxA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4kaVIGxA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4saVIGxA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4jaVIGxA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4iaVIGxA.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B5caVIGxA.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B5OaVIGxA.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F10C, U+1F110-1F16C, U+1F170-1F190, U+1F19B-1F1AC, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F579, U+1F57B-1F594, U+1F597-1F5A3, U+1F5A5-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CB, U+1F6CD-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA74, U+1FA78-1FA7A, U+1FA80-1FA86, U+1FA90-1FAA8, U+1FAB0-1FAB6, U+1FAC0-1FAC2, U+1FAD0-1FAD6, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4vaVIGxA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVIGxA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4taVIGxA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4kaVIGxA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4saVIGxA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4jaVIGxA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4iaVIGxA.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B5caVIGxA.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B5OaVIGxA.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F10C, U+1F110-1F16C, U+1F170-1F190, U+1F19B-1F1AC, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F579, U+1F57B-1F594, U+1F597-1F5A3, U+1F5A5-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CB, U+1F6CD-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA74, U+1FA78-1FA7A, U+1FA80-1FA86, U+1FA90-1FAA8, U+1FAB0-1FAB6, U+1FAC0-1FAC2, U+1FAD0-1FAD6, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4vaVIGxA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVIGxA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4taVIGxA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4kaVIGxA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4saVIGxA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4jaVIGxA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4iaVIGxA.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x5caVIGxA.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x5OaVIGxA.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F10C, U+1F110-1F16C, U+1F170-1F190, U+1F19B-1F1AC, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F579, U+1F57B-1F594, U+1F597-1F5A3, U+1F5A5-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CB, U+1F6CD-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA74, U+1FA78-1FA7A, U+1FA80-1FA86, U+1FA90-1FAA8, U+1FAB0-1FAB6, U+1FAC0-1FAC2, U+1FAD0-1FAD6, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4vaVIGxA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVIGxA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4taVIGxA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4kaVIGxA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4saVIGxA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4jaVIGxA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4iaVIGxA.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x5caVIGxA.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x5OaVIGxA.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F10C, U+1F110-1F16C, U+1F170-1F190, U+1F19B-1F1AC, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F579, U+1F57B-1F594, U+1F597-1F5A3, U+1F5A5-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CB, U+1F6CD-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA74, U+1FA78-1FA7A, U+1FA80-1FA86, U+1FA90-1FAA8, U+1FAB0-1FAB6, U+1FAC0-1FAC2, U+1FAD0-1FAD6, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4vaVIGxA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVIGxA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4taVIGxA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4kaVIGxA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4saVIGxA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4jaVIGxA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4iaVIGxA.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x5caVIGxA.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x5OaVIGxA.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F10C, U+1F110-1F16C, U+1F170-1F190, U+1F19B-1F1AC, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F579, U+1F57B-1F594, U+1F597-1F5A3, U+1F5A5-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CB, U+1F6CD-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA74, U+1FA78-1FA7A, U+1FA80-1FA86, U+1FA90-1FAA8, U+1FAB0-1FAB6, U+1FAC0-1FAC2, U+1FAD0-1FAD6, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4vaVIGxA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVIGxA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4gaVI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
