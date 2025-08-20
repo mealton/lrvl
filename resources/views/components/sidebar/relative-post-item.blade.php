@@ -5,7 +5,7 @@
                  src="{{$item->image}}" alt="{{$item->title}}">
             <div class="media-body">
                 <h4 class="h6 g-color-black g-font-weight-600">{!! html_entity_decode($item->title) !!}</h4>
-                <p class="g-color-gray-dark-v4">
+                <p class="g-color-gray-dark-v4 sidebar-post-item-description">
                     {!! html_entity_decode($item->introtext) !!}
                 </p>
             </div>

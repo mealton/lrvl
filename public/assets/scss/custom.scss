@@ -341,5 +341,11 @@ img.is-erotic {
     filter: blur(3px);
 }
 
+.sidebar-post-item-description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
 
 @import "components/media";
