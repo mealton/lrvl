@@ -26,7 +26,7 @@ class Service
 
             $contents = current((array)$item->contents);
             $images = array_filter($contents, function ($item) {
-                return $item['tag'] == "image" && $item['is_active'] == 1 && $item['deleted_at'] == null;
+                return $item['type'] == "image" && $item['is_active'] == 1 && $item['deleted_at'] == null;
             });
             $images = array_values($images);
             $posts[$i]->image = $images[rand(0, count($images) - 1)]->content;
@@ -42,18 +42,15 @@ class Service
             ->where(['is_published' => 1, 'is_deleted' => 0, 'moderated' => 1, 'deleted_at' => null])
             ->groupBy('id')
             ->orderByDesc('created_at')
-            ->paginate($per_page);
+            ->paginate($per_page)
+            ->withQueryString();
 
         return $this->post_converter($posts);
     }
 
     public function top_categories()
     {
-        $where = ['parent_id' => 0, 'is_active' => 1];
-        $chunkSize = ceil(Category::where($where)->count() / 2);
-        $firstChunk = Category::where($where)->take($chunkSize)->get();
-        $secondChunk = Category::where($where)->skip($chunkSize)->take($chunkSize)->get();
-        return [$firstChunk, $secondChunk];
+        return Category::where(['parent_id' => 0, 'is_active' => 1])->get();
     }
 
     public function show($post)
@@ -61,7 +58,7 @@ class Service
         $this->post = $post;
         foreach ($post->comments as $i => $comment) {
             $content_item = $image = DB::table('contents')
-                ->where(['tag' => 'comment', 'publication_id' => $comment->id])
+                ->where(['type' => 'comment', 'post_id' => $comment->id])
                 ->get()
                 ->first();
             if ($content_item)
@@ -129,28 +126,29 @@ class Service
 
     private function relatives($post_id)
     {
-        $hashtags = Hashtag::where(['publication_id' => $post_id])->get("name")->toArray();
+        $hashtags = Hashtag::where(['post_id' => $post_id])->get("name")->toArray();
         $hashtags = implode('", "', array_column($hashtags, "name"));
         $sql = <<<SQL
-SELECT 
+SELECT
     `p`.*,
     `cat`.`is_hidden`,
-    IF(`p`.`image_default` != "", `p`.`image_default`, 
-        (SELECT `content` 
-            FROM `contents` 
-            WHERE `publication_id` = `p`.`id` 
-                AND `tag` = "image" 
-                AND `content` != "" 
-                AND `is_active` = 1 
+    `cat`.`name` as `category`,
+    IF(`p`.`image_default` != "", `p`.`image_default`,
+        (SELECT `content`
+            FROM `contents`
+            WHERE `post_id` = `p`.`id`
+                AND `type` = "image"
+                AND `content` != ""
+                AND `is_active` = 1
             ORDER BY RAND() LIMIT 1)) as `image`,
-    (SELECT COUNT(*) FROM `hashtags` WHERE `name` IN ("$hashtags") AND `publication_id` = `p`.`id`) as `tags_counter`,
-    (SELECT COUNT(`id`) FROM `comments` WHERE `publication_id` = `p`.`id` AND `is_active` = 1) as `comment_count`
+    (SELECT COUNT(*) FROM `hashtags` WHERE `name` IN ("$hashtags") AND `post_id` = `p`.`id`) as `tags_counter`,
+    (SELECT COUNT(`id`) FROM `comments` WHERE `post_id` = `p`.`id` AND `is_active` = 1) as `comment_count`
 FROM `posts` as `p`
-    RIGHT JOIN `hashtags` as `h` ON  `p`.`id` = `h`.`publication_id` AND `h`.`name` IN ("$hashtags") AND `h`.`publication_id` != $post_id
+    RIGHT JOIN `hashtags` as `h` ON  `p`.`id` = `h`.`post_id` AND `h`.`name` IN ("$hashtags") AND `h`.`post_id` != $post_id
     RIGHT JOIN `categories` as `cat` ON `p`.`category_id` = `cat`.`id` AND `cat`.`is_active` = 1
 WHERE `p`.`id` != $post_id AND `p`.`is_published` = 1 AND `p`.`is_deleted` = 0 AND `p`.`moderated` = 1
 GROUP BY `p`.`id`
-HAVING `tags_counter` > 0 
+HAVING `tags_counter` > 0
 ORDER BY `tags_counter` DESC
 LIMIT 6
 SQL;
@@ -159,21 +157,21 @@ SQL;
 
         if (empty($result)) {
             $sql = <<<SQL
-SELECT 
+SELECT
     `p`.*,
     `cat`.`is_hidden`,
-    IF(`p`.`image_default` != "", `p`.`image_default`, 
-        (SELECT `content` 
-            FROM `contents` 
-            WHERE `publication_id` = `p`.`id` 
-                AND `tag` = "image" 
-                AND `content` != "" 
-                AND `is_active` = 1 
+    IF(`p`.`image_default` != "", `p`.`image_default`,
+        (SELECT `content`
+            FROM `contents`
+            WHERE `post_id` = `p`.`id`
+                AND `type` = "image"
+                AND `content` != ""
+                AND `is_active` = 1
             ORDER BY RAND() LIMIT 1)) as `image`,
-    (SELECT COUNT(`id`) FROM `comments` WHERE `publication_id` = `p`.`id` AND `is_active` = 1) as `comment_count`
+    (SELECT COUNT(`id`) FROM `comments` WHERE `post_id` = `p`.`id` AND `is_active` = 1) as `comment_count`
 FROM `posts` as `p`
     RIGHT JOIN `categories` as `cat` ON `p`.`category_id` = `cat`.`id` AND `cat`.`is_active` = 1
-WHERE `p`.`id` != $post_id AND `p`.`is_published` = 1 AND `p`.`is_deleted` = 0 
+WHERE `p`.`id` != $post_id AND `p`.`is_published` = 1 AND `p`.`is_deleted` = 0
   AND `p`.`moderated` = 1 AND `p`.`category_id` = (SELECT `category_id` FROM `posts` WHERE `id` = $post_id LIMIT 1)
 GROUP BY `p`.`id`
 ORDER BY `created_at` DESC
@@ -191,23 +189,36 @@ SQL;
     {
 
         $sql = <<<SQL
-SELECT 
+SELECT
     `p`.*,
     `cat`.`is_hidden`,
-    IF(`p`.`image_default` != "", `p`.`image_default`, 
-        (SELECT `content` 
-            FROM `contents` 
-            WHERE `publication_id` = `p`.`id` 
-                AND `tag` = "image" 
-                AND `content` != "" 
-                AND `is_active` = 1 
+    IF(`p`.`image_default` != "", `p`.`image_default`,
+        (SELECT `content`
+            FROM `contents`
+            WHERE `post_id` = `p`.`id`
+                AND `type` = "image"
+                AND `content` != ""
+                AND `is_active` = 1
             ORDER BY RAND() LIMIT 1)) as `image`,
-    (SELECT COUNT(`id`) FROM `comments` WHERE `publication_id` = `p`.`id` AND `is_active` = 1) as `comment_count`
+    (SELECT COUNT(`id`) FROM `comments` WHERE `post_id` = `p`.`id` AND `is_active` = 1) as `comment_count`
 FROM `posts` as `p`
     RIGHT JOIN `categories` as `cat` ON `p`.`category_id` = `cat`.`id` AND `cat`.`is_active` = 1
 WHERE `p`.`likes` > 2 AND `p`.`views` > 10 AND `p`.`is_published` = 1 AND `p`.`is_deleted` = 0 AND `p`.`moderated` = 1
 ORDER BY `likes` DESC, `views` DESC
 LIMIT 6
+SQL;
+        return DB::select($sql);
+    }
+
+
+    public function top_tags()
+    {
+        $sql = <<<SQL
+SELECT `name`, COUNT(*) as `count`
+FROM `hashtags`
+GROUP BY `name`
+ORDER BY `count` DESC
+LIMIT 8
 SQL;
         return DB::select($sql);
     }

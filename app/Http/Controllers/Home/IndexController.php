@@ -8,8 +8,9 @@ class IndexController extends Controller
 {
     public function __invoke()
     {
-        $title = "Home";
-        return view("pages.home.index", compact('title'));
+        //$title = "Home";
+        //return "e5545";
+        return view('pages.home.index');
     }
 }
 

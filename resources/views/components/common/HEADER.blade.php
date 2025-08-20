@@ -5,12 +5,12 @@
                 <!-- Start Social Icons -->
 
                 <div class="col-auto g-pos-rel g-px-15 location-switcher">
-                    <a title="На главную" href="/" class="g-color-white g-color-gray-light-v1--hover g-mr-10">
+                    <a title="На главную" href="{{route("post.index")}}" class="g-color-white g-color-gray-light-v1--hover g-mr-10">
                         <i class='fa fa-picture-o g-font-size-16 g-valign-middle'
                            aria-hidden='true'></i>
                     </a>
                     <i class="icon-location-pin g-font-size-16 g-valign-middle g-color-white g-mr-5"></i>
-                    <span><?= location() ?></span>
+                    <span><?//= location() ?></span>
                 </div>
 
 
@@ -20,7 +20,7 @@
                 <div class="col-auto g-pos-rel g-hidden-md-down">
 
                 <span style="text-transform: none;">
-                    <span class="datetime-string"><?= date_info() ?></span>
+                    <span class="datetime-string"><?//= date_info() ?></span>
                 </span>
                 </div>
                 <!-- End Languages -->
@@ -28,7 +28,7 @@
 
                 <div class="col-auto">
 
-                    <?php if (isset($_COOKIE['AUTH']) && $_COOKIE['AUTH'] == "1"): ?>
+                    {{--<?php if (isset($_COOKIE['AUTH']) && $_COOKIE['AUTH'] == "1"): ?>
                         <div class="d-inline-block g-valign-middle g-pos-rel g-top-minus-1 mr-2 d-xs-none">
                             <?php if (isset($_COOKIE['EDITOR'])): ?>
                                 <li class="list-inline-item d-flex align-items-center justify-content-center mr-0">
@@ -62,7 +62,7 @@
                                 <i class="fa fa-sign-in" aria-hidden="true" title="Авторизоваться"></i>
                             </a>
                         <?php endif; ?>
-                    </div>
+                    </div>--}}
 
                     <!-- Start Search -->
                     <div class="d-inline-block g-valign-middle g-pos-rel g-top-minus-1">

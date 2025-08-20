@@ -8,7 +8,7 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\User;
 
-//use http\Env\Request;
+use http\Env\Request;
 
 class IndexController extends BaseController
 {
@@ -36,12 +36,12 @@ class IndexController extends BaseController
 
         $posts = $this->service->index($filter, $this->per_page);
         $categories = $this->service->top_categories();
-        $relative_title = "Это интересно!";
         $top_posts = $this->service->top_posts();
+        $top_tags = $this->service->top_tags();
         $route = $this->service->get_route();
 
-        $variables = compact('title', 'posts', 'categories', 'relative_title', 'top_posts',
-            'breadcrumbs', 'subs', 'route');
+        $variables = compact('title', 'posts', 'categories', 'top_posts',
+            'breadcrumbs', 'subs', 'route', 'top_tags');
 
         return view("pages.blog.index", $variables);
     }

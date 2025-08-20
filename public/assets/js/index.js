@@ -430,7 +430,7 @@ const index = {
         this.editorData.hashtags = hashtags;
 
         let hashtagsHTML = hashtags.map(tag =>
-            `<a class="u-tags-v1 mb-2 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15 g-mr-5" 
+            `<a class="u-tags-v1 mb-2 g-font-size-12 g-brd-around g-brd-gray-light-v4 g-bg-primary--hover g-brd-primary--hover g-color-black-opacity-0_8 g-color-white--hover rounded g-py-6 g-px-15 g-mr-5"
                 href="/tag/${tag}">${tag}</a>`);
         document.querySelector('.hashtags-inner').innerHTML = hashtagsHTML.join('');
         $(item).closest('.modal-content').find('.btn-close').click();
@@ -777,6 +777,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    window.onscroll = () => {
+        let scrollTop = this.pageYOffset;
+        let lift = document.getElementById('lift');
+        let liftOnclick = e => e.target.classList.contains('visible') ? this.scrollTo({top: 0}) : false;
+        if (scrollTop > 1000) {
+            lift.classList.add('visible');
+            lift.addEventListener("click", liftOnclick);
+        } else {
+            lift.classList.remove('visible');
+            lift.removeEventListener('click', liftOnclick);
+        }
+    };
 
 });
 

@@ -14,11 +14,12 @@ class ShowController extends BaseController
         $post = $this->service->show($post);
         $categories = $this->service->top_categories();
         $breadcrumbs = $this->service->breadcrumbs($post->category_id);
-        $relative_title = "Похожие публикации";
+        $top_posts = $this->service->top_posts();
         $route = $this->service->get_route();
+        $top_tags = $this->service->top_tags();
 
-        $variables = compact('post', 'title', 'categories', 'relative_title', 'breadcrumbs', 'route');
-
+        $variables = compact('post', 'title', 'categories', 'top_posts', 'breadcrumbs',
+            'route', 'top_tags');
 
         return view("pages.blog.show", $variables);
     }

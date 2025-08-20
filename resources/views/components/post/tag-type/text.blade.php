@@ -1,1 +1,4 @@
-<p class="fs-5 mb-4" style="text-align: justify; ">{!! htmlspecialchars_decode($item->content) !!}</p>
+<p class="g-color-gray-dark-v2 text-justify fs-5 mb-4">
+    {!! htmlspecialchars_decode($item->content) !!}
+</p>
+

@@ -1,4 +1,4 @@
-<div class="g-mb-0">
+<div class="g-mb-0 mt-5" id="comments">
     <div class="u-heading-v3-1 g-mb-30">
         <h2 class="h5 u-heading-v3__title g-color-gray-dark-v1 text-uppercase g-brd-primary">
             Комментарии

@@ -1,4 +1,4 @@
-<figure class="mb-4 image-item-container" itemscope="" itemtype="http://schema.org/ImageObject">
+<figure class="image-item-container d-inline-block my-4" itemscope="" itemtype="http://schema.org/ImageObject">
 
     <blockquote class="blockquote">
         <p>
@@ -6,10 +6,10 @@
         </p>
     </blockquote>
 
-    <figure class="publication-image-item-container">
+    <figure class="publication-image-item-container d-inline-block">
         <img itemprop="contentUrl"
              style="cursor: default"
-             class="img-fluid rounded publication-image-item"
+             class="img-fluid rounded publication-image-item u-shadow-v25 g-mb-20"
              src="{{$item->content}}" alt="">
 
         <figcaption>

@@ -19,68 +19,25 @@
              data-start-point="#stickyblock-start" data-end-point="#stickyblock-end">
             <!-- Start Publications -->
             <div class="g-mb-20">
-                <h3 class="h5 g-color-black g-font-weight-600 mb-4">{{ $relative_title  }}</h3>
+                <h3 class="h5 g-color-black g-font-weight-600 mb-4">Это интересно</h3>
                 <ul class="list-unstyled g-font-size-13 mb-0">
-
-                    @if(isset($post))
-                        @foreach($post->relatives as $item)
-                            @include("components.aside.aside-post-item")
-                        @endforeach
-                    @elseif(isset($top_posts))
-                        @foreach($top_posts as $item)
-                            @include("components.aside.aside-post-item")
-                        @endforeach
-                    @endif
-
-                    <li>
-                        <article class="media g-mb-20">
-                            <img class="d-flex g-width-40 g-height-40 rounded-circle mr-3"
-                                 src="assets/img-temp/100x100/img1.jpg" alt="Gravity">
-                            <div class="media-body">
-                                <h4 class="h6 g-color-black g-font-weight-600">Apple LLC</h4>
-                                <p class="g-color-gray-dark-v4">I am alone, and feel the charm of existence in
-                                    this spot, which was ...</p>
-                                <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25"
-                                   href="#">Follow</a>
-                            </div>
-                        </article>
-                    </li>
+                    @foreach($top_posts as $item)
+                        @include("components.sidebar.relative-post-item")
+                    @endforeach
                 </ul>
             </div>
             <!-- End Publications -->
             <hr class="g-brd-gray-light-v4 g-mt-0 g-mb-20">
             <!-- Start Tags -->
             <div class="g-mb-0">
-                <h3 class="h5 g-color-black g-font-weight-600 mb-4">Blog Tags</h3>
+                <h3 class="h5 g-color-black g-font-weight-600 mb-4">Популярные метки</h3>
                 <ul class="u-list-inline mb-0">
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Design</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Javascript</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">HTML</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">CSS</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Less</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">Sass</a>
-                    </li>
-                    <li class="list-inline-item g-mb-10">
-                        <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                           href="#">WordPress</a>
-                    </li>
+                    @foreach($top_tags as $tag)
+                        <li class="list-inline-item g-mb-10">
+                            <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                               href="{{route("post.index") . "?hashtag=" . $tag->name}}">{!! $tag->name !!}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
             <!-- End Tags -->
