@@ -31,7 +31,7 @@
                         </li>
                         <li class="nav-item hs-has-sub-menu g-mx-15--lg" data-animation-in="fadeIn"
                             data-animation-out="fadeOut">
-                            <a id="nav-link--landing" class="nav-link g-py-7 g-px-0" href="landing.html"
+                            <a id="nav-link--landing" class="nav-link g-py-7 g-px-0" href="{{route("post.categories")}}"
                                aria-haspopup="true" aria-expanded="false"
                                aria-controls="nav-submenu--landing">Категории</a>
                             <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling animated fadeOut"
