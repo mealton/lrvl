@@ -3,7 +3,6 @@
 set -e
 
 echo "Deploying..."
-cd mvc
 git pull origin master
 php8.2 artisan down
 php8.2 composer.phar install --no-dev --optimize-autoloader
