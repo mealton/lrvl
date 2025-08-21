@@ -27,7 +27,7 @@ class FilterRequest extends FormRequest
             'search' => 'string',
             'category' => 'integer',
             'author' => 'integer',
-            'tag' => '',
+            'hashtag' => '',
         ];
     }
 }

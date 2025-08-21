@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 class PostFilter extends AbstractFilter
 {
     const SEARCH = 'search';
-    const TAG = 'tag';
+    const TAG = 'hashtag';
     const CATEGORY_ID = 'category';
     const AUTHOR_ID = 'author';
 
@@ -19,7 +19,7 @@ class PostFilter extends AbstractFilter
     {
         return [
             self::SEARCH => [$this, 'search'],
-            self::TAG => [$this, 'tag'],
+            self::TAG => [$this, 'hashtag'],
             self::CATEGORY_ID => [$this, 'categoryId'],
             self::AUTHOR_ID => [$this, 'authorId'],
         ];
@@ -32,11 +32,11 @@ class PostFilter extends AbstractFilter
             ->orWhere('introtext', 'like', "%{$value}%");
     }
 
-    public function tag(Builder $builder, $value)
+    public function hashtag(Builder $builder, $value)
     {
         $builder
             ->select(DB::raw("posts.*"))
-            ->rightJoin('hashtags', 'hashtags.publication_id', "=", 'posts.id')
+            ->rightJoin('hashtags', 'hashtags.post_id', "=", 'posts.id')
             ->where('hashtags.name', '=', $value);
     }
 

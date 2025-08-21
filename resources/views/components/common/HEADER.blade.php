@@ -1,16 +1,19 @@
 <header id="js-header" class="u-header u-header--static dark-header">
-    <div class="mechanika-top-header u-header__section u-header__section--hidden u-header__section--dark g-bg-black g-transition-0_3 g-py-10 top-bar">
+    <div
+        class="mechanika-top-header u-header__section u-header__section--hidden u-header__section--dark g-bg-black g-transition-0_3 g-py-10 top-bar">
         <div class="container">
-            <div class="row flex-sm-row justify-content-between align-items-center g-font-weight-600 g-color-white g-font-size-12 g-mx-0--lg top-header__container">
+            <div
+                class="row flex-sm-row justify-content-between align-items-center g-font-weight-600 g-color-white g-font-size-12 g-mx-0--lg top-header__container">
                 <!-- Start Social Icons -->
 
                 <div class="col-auto g-pos-rel g-px-15 location-switcher">
-                    <a title="На главную" href="{{route("post.index")}}" class="g-color-white g-color-gray-light-v1--hover g-mr-10">
+                    <a title="На главную" href="{{route("post.index")}}"
+                       class="g-color-white g-color-gray-light-v1--hover g-mr-10">
                         <i class='fa fa-picture-o g-font-size-16 g-valign-middle'
                            aria-hidden='true'></i>
                     </a>
                     <i class="icon-location-pin g-font-size-16 g-valign-middle g-color-white g-mr-5"></i>
-                    <span><?//= location() ?></span>
+                    <span>{{App\Services\Main\Service::get_location()}}</span>
                 </div>
 
 
@@ -20,7 +23,7 @@
                 <div class="col-auto g-pos-rel g-hidden-md-down">
 
                 <span style="text-transform: none;">
-                    <span class="datetime-string"><?//= date_info() ?></span>
+                    <span class="datetime-string"><? //= date_info() ?></span>
                 </span>
                 </div>
                 <!-- End Languages -->

@@ -17,7 +17,7 @@ class Service
     {
         foreach ($posts as $i => $item) {
 
-            $posts[$i]->date = $this->date_formatter($item->created_at, ['time' => 1]);
+            $posts[$i]->date = $this->date_formatter($item->created_at);
 
             if ($item->image_default) {
                 $posts[$i]->image = $item->image_default;
@@ -210,7 +210,6 @@ SQL;
         return DB::select($sql);
     }
 
-
     public function top_tags()
     {
         $sql = <<<SQL
@@ -240,6 +239,5 @@ SQL;
         $_namespace = explode("\\", $namespace);
         return end($_namespace);
     }
-
 
 }
