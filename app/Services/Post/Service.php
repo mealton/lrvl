@@ -56,7 +56,7 @@ class Service
 
     public function getCategories()
     {
-        $all_categories = Category::where(['is_active' => 1])->get();
+        $all_categories = Category::where(['is_active' => 1])->orderBy('name', 'asc')->get();
         $categories = $this->top_categories();
         $top_posts = $this->top_posts();
         $top_tags = $this->top_tags();
@@ -80,6 +80,8 @@ class Service
                 'posts.is_published' => 1,
                 'posts.moderated' => 1,
             ])
+            ->orderBy('users.fullname', 'asc')
+            ->orderBy('users.username', 'asc')
             ->groupBy('users.id')
             ->get();
 
