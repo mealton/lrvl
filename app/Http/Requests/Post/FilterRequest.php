@@ -28,6 +28,7 @@ class FilterRequest extends FormRequest
             'category' => 'integer',
             'author' => 'integer',
             'hashtag' => '',
+            'no-erotic' => '',
         ];
     }
 }

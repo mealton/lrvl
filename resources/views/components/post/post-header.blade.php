@@ -1,4 +1,4 @@
-<header class="g-mb-30 mt-5">
+<header class="g-mb-30">
     <h2 class="h1 g-mb-15 g-mt-minus-10">{!! html_entity_decode($post->title) !!}</h2>
     <ul class="list-inline d-sm-flex g-color-gray-dark-v4 mb-0">
         <li class="list-inline-item">
@@ -19,6 +19,12 @@
                 {{count($post->comments)}}
             </a>
         </li>
+        <li class="list-inline-item g-mx-10">/</li>
+        <li class="list-inline-item g-mx-10">
+            <i class="fa fa-heart-o pointer" aria-hidden="true" data-click="like"></i> {{$post->likes}}
+        </li>
+
+
         <li class="list-inline-item ml-auto">
             <i class="icon-eye u-line-icon-pro align-middle mr-1"></i> Просмотров {{$post->views}}
         </li>

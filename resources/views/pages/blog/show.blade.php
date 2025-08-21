@@ -35,7 +35,7 @@
                 <div class="row">
                     @foreach($post->relatives as $item)
                         <div class="col-lg-4 col-sm-6 g-mb-30" style="height: 140px;">
-                            <a href="{{route("post.index") . "/" . $item->id}}">
+                            <a href="{{route("post.index") . "/post/" . $item->id}}">
                                 <article>
                                     <figure class="u-shadow-v25 g-pos-rel g-mb-0">
                                         <img class="img-fluid w-100 h-100"

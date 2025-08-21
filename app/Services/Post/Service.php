@@ -6,6 +6,7 @@ namespace App\Services\Post;
 use App\Models\Category;
 use App\Models\Hashtag;
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class Service
@@ -34,12 +35,80 @@ class Service
         return $posts;
     }
 
+
+    public function getPosts($filter, $per_page)
+    {
+        $posts = $this->index($filter, $per_page);
+        $categories = $this->top_categories();
+        $top_posts = $this->top_posts();
+        $top_tags = $this->top_tags();
+        $route = $this->get_route();
+
+        return [
+            'items' => $posts,
+            'categories' => $categories,
+            'top_posts' => $top_posts,
+            'top_tags' => $top_tags,
+            'route' => $route,
+        ];
+    }
+
+
+    public function getCategories()
+    {
+        $all_categories = Category::where(['is_active' => 1])->get();
+        $categories = $this->top_categories();
+        $top_posts = $this->top_posts();
+        $top_tags = $this->top_tags();
+        $route = $this->get_route();
+
+        return [
+            'all_categories' => $all_categories,
+            'categories' => $categories,
+            'top_posts' => $top_posts,
+            'top_tags' => $top_tags,
+            'route' => $route,
+        ];
+    }
+
+    public function getAuthors()
+    {
+        $authors = User
+            ::select(DB::raw('count(posts.id) as post_count, users.*'))
+            ->rightJoin('posts', 'posts.user_id', "=", 'users.id')
+            ->where([
+                'posts.is_published' => 1,
+                'posts.moderated' => 1,
+            ])
+            ->groupBy('users.id')
+            ->get();
+
+        $categories = $this->top_categories();
+        $top_posts = $this->top_posts();
+        $top_tags = $this->top_tags();
+        $route = $this->get_route();
+
+        return [
+            'authors' => $authors,
+            'categories' => $categories,
+            'top_posts' => $top_posts,
+            'top_tags' => $top_tags,
+            'route' => $route,
+        ];
+    }
+
+
     public function index($filter, $per_page)
     {
         $posts = Post::
         with('contents')
             ->filter($filter)
-            ->where(['is_published' => 1, 'is_deleted' => 0, 'moderated' => 1, 'deleted_at' => null])
+            ->where([
+                'posts.is_published' => 1,
+                'posts.is_deleted' => 0,
+                'posts.moderated' => 1,
+                'posts.deleted_at' => null
+            ])
             ->groupBy('id')
             ->orderByDesc('created_at')
             ->paginate($per_page)
@@ -202,7 +271,7 @@ SELECT
             ORDER BY RAND() LIMIT 1)) as `image`,
     (SELECT COUNT(`id`) FROM `comments` WHERE `post_id` = `p`.`id` AND `is_active` = 1) as `comment_count`
 FROM `posts` as `p`
-    RIGHT JOIN `categories` as `cat` ON `p`.`category_id` = `cat`.`id` AND `cat`.`is_active` = 1
+    RIGHT JOIN `categories` as `cat` ON `p`.`category_id` = `cat`.`id` AND `cat`.`is_active` = 1 AND `cat`.`is_hidden` = 0
 WHERE `p`.`likes` > 2 AND `p`.`views` > 10 AND `p`.`is_published` = 1 AND `p`.`is_deleted` = 0 AND `p`.`moderated` = 1
 ORDER BY `likes` DESC, `views` DESC
 LIMIT 6

@@ -1,21 +1,6 @@
 <div class="col-lg-3 g-brd-left--lg g-brd-gray-light-v4 g-mb-30">
     <div class="g-pl-20--lg">
-        <!-- Start Useful Links -->
-        <div class="g-mb-20">
-            <h3 class="h5 g-color-black g-font-weight-600 g-mb-10">Категории</h3>
-            <ul class="list-unstyled g-font-size-13 mb-0">
-                @foreach($categories as $category)
-                    <li class="{{ @$_GET['category'] == $category->id ? "current-category" : ""  }}">
-                        <a class="d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8"
-                           href="{{route("post.index") . "?category=" . $category->id}}">
-                            <i class="mr-2 fa fa-angle-right"></i> {!! $category->name !!}</a>
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-        <!-- End Useful Links -->
-        <hr class="g-brd-gray-light-v4 g-my-0">
-        <div id="stickyblock-start" class="js-sticky-block g-sticky-block--lg g-pt-20"
+        <div id="stickyblock-start" class="js-sticky-block g-sticky-block--lg"
              data-start-point="#stickyblock-start" data-end-point="#stickyblock-end">
             <!-- Start Publications -->
             <div class="g-mb-20">
@@ -41,6 +26,21 @@
                 </ul>
             </div>
             <!-- End Tags -->
+            <hr class="g-brd-gray-light-v4 g-mt-20 g-mb-20">
+            <!-- Start Useful Links -->
+            <div class="g-mb-20">
+                <h3 class="h5 g-color-black g-font-weight-600 g-mb-10">Категории</h3>
+                <ul class="list-unstyled g-font-size-13 mb-0">
+                    @foreach($categories as $category)
+                        <li class="{{ @$_GET['category'] == $category->id ? "current-category" : ""  }}">
+                            <a class="d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8"
+                               href="{{route("post.index") . "?category=" . $category->id}}">
+                                <i class="mr-2 fa fa-angle-right"></i> {!! $category->name !!}</a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+            <!-- End Useful Links -->
         </div>
     </div>
 </div>

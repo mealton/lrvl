@@ -18,6 +18,7 @@
     <!-- End Page Preloader -->
     <!-- Start Header -->
     <header>
+        @include("components.common.TOP-HEADER")
         @include("components.common.HEADER")
         <hr class="g-mx-0 g-my-0">
     </header>
@@ -26,7 +27,7 @@
     @include("components.common.breadcrumbs")
 
     <main id="main-content">
-        <div class="container g-pt-75 g-pb-45">
+        <div class="container g-pt-45 g-pb-45">
             <div class="row justify-content-center">
                 <div class="col-lg-9 g-mb-30">
                     @yield("content")

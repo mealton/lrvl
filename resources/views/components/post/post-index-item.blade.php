@@ -11,7 +11,7 @@
                 </span>
 
 
-                <a href="{{route("post.index") . "/" . $item->id}}">
+                <a href="{{route("post.index") . "/post/" . $item->id}}">
                     <img
                         class="img-fluid w-100 u-block-hover__main--mover-down g-mb-minus-6 {{ $item->category->is_hidden ? 'is-erotic' : '' }}"
                         src="{{ $item->image  }}" alt="{{ $item->title }}">
@@ -30,7 +30,7 @@
             </ul>
             <h2 class="h4 g-color-black g-font-weight-600 g-mb-15">
                 <a class="u-link-v5 g-color-black g-color-primary--hover"
-                   href="{{route("post.index") . "/" . $item->id}}">
+                   href="{{route("post.index") . "/post/" . $item->id}}">
                     @if(isset($_GET['search']))
                         {!!  preg_replace('/(' . urldecode(@$_GET['search']) . ')/iu','<mark>$1</mark>', html_entity_decode($item->title)) !!}
                     @else

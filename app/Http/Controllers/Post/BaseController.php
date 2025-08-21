@@ -11,6 +11,9 @@ class BaseController extends Controller
 
     public $service;
 
+    protected $per_page = 15;
+
+
     public function __construct(Service $service)
     {
         $this->service = $service;

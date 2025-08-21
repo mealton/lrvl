@@ -1,6 +1,6 @@
 <base href="https://news.mealton.ru">
 <!-- Title -->
-<title>{!! @$title ?: "Mealton!!!" !!}</title>
+<title>{!! html_entity_decode(@$title) ?: "Mealton!!!" !!}</title>
 <!-- Meta Tags -->
 <meta charset="utf-8">
 {{--<meta name="author" content="<?= $author ?>">--}}

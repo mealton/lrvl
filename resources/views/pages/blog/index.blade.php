@@ -4,6 +4,9 @@
     <!-- Start Blog Minimal Content -->
 
     <div class="g-pr-0--lg">
+        @include("components.post.subs")
+    </div>
+    <div class="g-pr-0--lg">
         <!-- Start Blog Articles -->
 
         @foreach($posts as $item)

@@ -12,33 +12,35 @@ use http\Env\Request;
 
 class IndexController extends BaseController
 {
-    //C:\ProgramData\ComposerSetup\bin\composer.phar
-
-    private $per_page = 10;
-
     public function __invoke(FilterRequest $request)
     {
         $title = "Блог";
         $breadcrumbs = [];
         $subs = [];
         $data = $request->validated();
+
+        if (empty($data))
+            $data["no-erotic"] = "1";
+
         $filter = app()->make(PostFilter::class, ['queryParams' => $data]);
 
         if (@$data['category']) {
             $breadcrumbs = $this->service->breadcrumbs($data['category']);
             $subs = Category::where(['parent_id' => $data['category'], 'is_active' => 1])->get();
             $title = Category::find($data['category'])->name;
-        }elseif (@$data['tag']){
+        } elseif (@$data['tag']) {
             $title = "#" . $data['tag'];
-        }elseif (@$data['author']){
+        } elseif (@$data['author']) {
             $title = "Публикации автора " . User::find($data['author'])->username;
         }
 
-        $posts = $this->service->index($filter, $this->per_page);
-        $categories = $this->service->top_categories();
-        $top_posts = $this->service->top_posts();
-        $top_tags = $this->service->top_tags();
-        $route = $this->service->get_route();
+        $index_posts = $this->service->getPosts($filter, $this->per_page);
+
+        $posts = $index_posts['items'];
+        $categories = $index_posts['categories'];
+        $top_posts = $index_posts['top_posts'];
+        $top_tags = $index_posts['top_tags'];
+        $route = $index_posts['route'];
 
         $variables = compact('title', 'posts', 'categories', 'top_posts',
             'breadcrumbs', 'subs', 'route', 'top_tags');

@@ -1,5 +1,5 @@
 <li>
-    <a href="{{route("post.index") . "/" . $item->id}}">
+    <a href="{{route("post.index") . "/post/" . $item->id}}">
         <article class="media g-mb-20">
             <img class="d-flex g-width-40 g-height-40 rounded-circle mr-3 {{ $item->is_hidden ? 'is-erotic' : '' }}"
                  src="{{$item->image}}" alt="{{$item->title}}">

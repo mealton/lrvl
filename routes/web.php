@@ -17,7 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'Post'], function () {
     Route::get('/', 'IndexController')->name("post.index");
-    Route::get('/{post}', 'ShowController')->name("post.show");
+    Route::get('/post/{post}', 'ShowController')->name("post.show");
+    Route::get('/all', 'AllController')->name("post.all");
+    Route::get('/categories', 'CategoriesController')->name("post.categories");
+    Route::get('/authors', 'AuthorsController')->name("post.authors");
 });
 
 

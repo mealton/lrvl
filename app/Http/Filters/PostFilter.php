@@ -13,6 +13,7 @@ class PostFilter extends AbstractFilter
     const TAG = 'hashtag';
     const CATEGORY_ID = 'category';
     const AUTHOR_ID = 'author';
+    const NO_EROTIC = 'no-erotic';
 
 
     protected function getCallbacks()
@@ -22,6 +23,7 @@ class PostFilter extends AbstractFilter
             self::TAG => [$this, 'hashtag'],
             self::CATEGORY_ID => [$this, 'categoryId'],
             self::AUTHOR_ID => [$this, 'authorId'],
+            self::NO_EROTIC => [$this, 'noErotic'],
         ];
     }
 
@@ -48,5 +50,13 @@ class PostFilter extends AbstractFilter
     public function authorId(Builder $builder, $value)
     {
         $builder->where('user_id', $value);
+    }
+
+    public function noErotic(Builder $builder)
+    {
+        $builder
+            ->select(DB::raw("posts.*"))
+            ->rightJoin('categories', 'posts.category_id', "=", 'categories.id')
+            ->where('categories.is_hidden', '=', 0);
     }
 }
