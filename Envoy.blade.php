@@ -1,7 +1,7 @@
-@servers(['sweb' => '{{ env('SERVER') }}'])
+@servers(['sweb' => ["titovywmai@77.222.56.185"]])
 
 @task('deploy', ['on' => 'sweb'])
-    cd {{ env('PATH') }}
+    cd /home/t/titovywmai/mvc
     set -e
     echo "Deploying..."
     git pull origin master

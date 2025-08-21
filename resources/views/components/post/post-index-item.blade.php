@@ -2,7 +2,7 @@
     <article class="row align-items-start u-block-hover">
         <div class="col-md-6 g-mb-30">
             <div class="g-overflow-hidden">
-                <a href="{{route("post.index") . "post-index-item.blade.php/" . $item->id}}">
+                <a href="{{route("post.index") . "/" . $item->id}}">
                     <img class="img-fluid w-100 u-block-hover__main--mover-down g-mb-minus-6 {{ $item->category->is_hidden ? 'is-erotic' : '' }}"
                          src="{{ $item->image  }}" alt="{{ $item->title }}">
                 </a>
