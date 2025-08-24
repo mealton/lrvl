@@ -35,6 +35,20 @@ class Service
         return $posts;
     }
 
+    public function getSubs($category_id)
+    {
+        return Category
+            ::rightJoin('posts', 'posts.category_id', "=", 'categories.id')
+            ->where([
+                'categories.parent_id' => $category_id,
+                'categories.is_active' => 1,
+                'posts.is_published' => 1,
+                'posts.moderated' => 1,
+            ])
+            ->groupBy('categories.id')
+            ->get();
+    }
+
 
     public function getPosts($filter, $per_page)
     {

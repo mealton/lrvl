@@ -26,7 +26,7 @@ class IndexController extends BaseController
 
         if (@$data['category']) {
             $breadcrumbs = $this->service->breadcrumbs($data['category']);
-            $subs = Category::where(['parent_id' => $data['category'], 'is_active' => 1])->get();
+            $subs = $this->service->getSubs($data['category']);
             $title = Category::find($data['category'])->name;
         } elseif (@$data['tag']) {
             $title = "#" . $data['tag'];
