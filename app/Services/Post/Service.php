@@ -38,7 +38,8 @@ class Service
     public function getSubs($category_id)
     {
         return Category
-            ::rightJoin('posts', 'posts.category_id', "=", 'categories.id')
+            ::select(['categories.*', 'categories.id as id'])
+            ->rightJoin('posts', 'posts.category_id', "=", 'categories.id')
             ->where([
                 'categories.parent_id' => $category_id,
                 'categories.is_active' => 1,
