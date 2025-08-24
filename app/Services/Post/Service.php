@@ -246,6 +246,7 @@ SQL;
 SELECT
     `p`.*,
     `cat`.`is_hidden`,
+    `cat`.`name` as `category`,
     IF(`p`.`image_default` != "", `p`.`image_default`,
         (SELECT `content`
             FROM `contents`
